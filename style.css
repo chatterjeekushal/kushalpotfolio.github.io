@@ -19,6 +19,12 @@
     -webkit-font-smotthing: antialiased;
 }
 
+body{
+
+    overflow-x: hidden;
+    
+}
+
 header {
 
 
@@ -156,7 +162,7 @@ nav .brand {
     align-items: center;
 
     background-color: black;
-    width: 100%;
+    width:100%;
     height: 100vh;
     justify-content: space-evenly;
 
@@ -996,17 +1002,18 @@ h6 {
 
     .mobilemanu {
 
-        position: fixed;
+        position:absolute;
         top: 0px;
         left: 0px;
         z-index: 1001;
         background-color: var(--light);
-        width: 100%;
+        width:100%;
         height: auto;
-        padding: 2rem;
+        padding: 0rem;
         padding-top: 4rem;
         transform: translateX(-100%);
         transition: .5s ease-in-out;
+        overflow-x: hidden;
 
     }
 
@@ -1091,6 +1098,13 @@ h6 {
 
 @media (max-width:800px) {
 
+    body{
+overflow-x: hidden;
+
+
+    }
+
+
     .hero {
 
         display: flex;
@@ -1128,13 +1142,24 @@ h6 {
         font-size: 2.1rem;
     }
 
+    .text{
+
+        width:80vw;
+        margin-right: 4rem;
+    }
+
 
 
     /* about responsiv coding start*/
 
+    .about{
+
+        padding: 0px;
+    }
+
     .contaner {
 
-        display: flex;
+        display:block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1147,10 +1172,10 @@ h6 {
 
     .aboutimg .man2img {
 
-        width: 95%;
+        width: 80%;
         height: 50vh;
         margin-top: 2rem;
-        margin-left: 1.3rem;
+        margin-left: 3.5rem;
 
     }
 
@@ -1168,7 +1193,7 @@ h6 {
 
     .about p {
 
-        width: auto;
+        width:90vw;
         display: block;
         font-size: 1.2rem;
     }
@@ -1177,15 +1202,11 @@ h6 {
 
         width: 90%;
         margin-bottom: 2rem;
-
-
-
-
-
-
-
+        
 
     }
+
+
 
     /* servise responsiv coding*/
 
@@ -1245,7 +1266,7 @@ h6 {
 
     .freelance h1 {
 
-        margin-left: 3.5rem;
+        margin-left:1rem;
 
     }
 
@@ -1258,30 +1279,34 @@ h6 {
 
     .card_slider .slide img {
 
-        width: 95%;
+        width: 50%;
 
-        height: 50vh;
+        height: 40vh;
 
     }
 
     .card_slider {
         padding-top: 2rem;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .slide p {
 
-        width: 14rem;
+        width: 18rem;
     }
 
     .next {
 
-        right: 20px;
-        bottom: 15rem;
+        right: 25px;
+        bottom: 32rem;
     }
 
     .prev {
 
         left: 1rem;
+        bottom: 32rem;
+
     }
 
 
@@ -1363,7 +1388,8 @@ margin-left: 3.5rem;
 
 .cardicon h6{
 
-font-size: 1.2rem;
+font-size: 1rem;
+margin-right:5rem ;
 }
 
 /*contact coding start*/
@@ -1396,8 +1422,9 @@ border:1px solid black;
 
 
 margin-top: 2rem;
-margin-right: 1.5rem;
+margin-right: 1.1rem;
 margin-top: 2.5rem;
+width:90%;
 }
 
 .formbtn{
