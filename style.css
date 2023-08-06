@@ -5,6 +5,12 @@
     --ternary: #898989;
     --light: #F2f2f2;
     --secondary: #070606;
+    
+overflow: hidden;
+overflow-y:visible;
+
+
+
 
 }
 
@@ -1121,6 +1127,7 @@ overflow-x: hidden;
 
         background-size: cover;
         background-position: center;
+        fill-opacity: var(--dark);
 
 
     }
@@ -1139,13 +1146,13 @@ overflow-x: hidden;
 
     .type {
 
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .text{
 
         width:80vw;
-        margin-right: 4rem;
+        margin-right: 5.1rem;
     }
 
 
